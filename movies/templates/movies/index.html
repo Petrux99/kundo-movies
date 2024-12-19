@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kundo Movies - Search</title>
+  <link rel="stylesheet" href="{% static 'movies/styles.css' %}">
+</head>
+
+<body>
+  <div id="bg-container"></div>
+  <main>
+    <h1>Search for Movies</h1>
+    <form id="search-form">
+      <input id="search-field" placeholder="My favorite movie" />
+    </form>
+    <div id="results"></div>
+    <script src="{% static 'movies/lodash.min.js' %}"></script>
+    <script src="{% static 'movies/script.js' %}"></script>
+  </main>
+</body>
+
+</html>

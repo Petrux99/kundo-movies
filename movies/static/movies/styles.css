@@ -1,0 +1,91 @@
+html {
+    font-family: sans-serif;
+    color: #e3e3e3;
+    font-size: 62.5%;
+}
+
+body {
+}
+
+#bg-container {
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#002, #006);
+    background-size: cover;
+}
+
+main {
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    margin: 40px auto 0;
+    box-shadow: 0 0 20px #009;
+    font-size: 1.5rem;
+}
+
+#search-form {
+
+}
+
+#search-field {
+    font-size: 1.8rem;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.result {
+    background-color: #ccc;
+    border-radius: 4px;
+    clear: both;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.result img {
+    width: 100%;
+}
+
+#details  {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info {
+    width: 60%;
+    min-width: 300px
+}
+
+.fact {
+    display: flex;
+    column-gap: 3rem; 
+    min-width: 300px;
+    margin-bottom: 4px;
+}
+
+.fact label {
+    flex: 0 0 120px;
+}
+
+#ratings {
+    display: flex;
+    column-gap: 5rem;
+    row-gap: 8px;
+    flex-wrap: wrap;
+}
+
+#details > img  {
+    width: 220px;
+}
