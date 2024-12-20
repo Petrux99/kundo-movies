@@ -19,6 +19,6 @@ def details(request, imdbID):
     return HttpResponse(template.render({ "details": match }, request))
 
 def search(request, query):
-    response = requests.get('http://www.omdbapi.com/?apikey=444ddd63&s=' + query) 
+    response = requests.get(f'http://www.omdbapi.com/?apikey={API_KEY}&s={query}') 
     matches = response.json()['Search']
     return JsonResponse(matches, safe=False)
